@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 100" width="280" height="100">
+  <defs>
+    <style>
+      .v-mark { fill: #1a2b5f; }
+      .brand-text { font-family: 'Arial Black', 'Helvetica Neue', Arial, sans-serif; font-weight: 900; fill: #1a2b5f; }
+      .sub-text { font-family: Arial, Helvetica, sans-serif; font-weight: 400; fill: #7a8ab0; letter-spacing: 3px; }
+    </style>
+  </defs>
+  <path class="v-mark" d="M10,20 L40,75 L55,45 L48,45 L40,62 L22,20 Z"/>
+  <path class="v-mark" d="M55,45 L62,45 L48,20 L38,20 Z"/>
+  <text x="62" y="60" class="brand-text" font-size="40">ENTURI</text>
+  <text x="62" y="80" class="sub-text" font-size="10">CORRETORA DE SEGUROS</text>
+</svg>

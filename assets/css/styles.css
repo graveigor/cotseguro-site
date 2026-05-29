@@ -1,0 +1,170 @@
+/* =====================================================================
+   Cotseguro — estilos personalizados (complemento ao Tailwind CDN)
+   Aqui ficam apenas coisas que o Tailwind utilitário não cobre bem:
+   variáveis de cor, animações, gradientes e pequenos detalhes.
+   ===================================================================== */
+
+:root {
+  --navy: #0b2545;
+  --navy-700: #13315c;
+  --brand: #1763e6;
+  --sky: #3b82f6;
+  --amber: #f59e0b;
+  --ink: #0f172a;
+  --whatsapp: #25d366;
+}
+
+/* Rolagem suave ao clicar em âncoras internas */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px; /* compensa o header fixo */
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ---------------------------------------------------------------------
+   Hero — fundo com gradiente da marca + textura sutil
+   --------------------------------------------------------------------- */
+.hero-bg {
+  background:
+    radial-gradient(900px 500px at 85% -10%, rgba(59, 130, 246, 0.35), transparent 60%),
+    radial-gradient(700px 500px at -10% 110%, rgba(23, 99, 230, 0.25), transparent 55%),
+    linear-gradient(135deg, #0b2545 0%, #13315c 55%, #1763e6 130%);
+}
+
+/* Padrão de linhas diagonais (sensação de "movimento / rota") */
+.hero-pattern {
+  background-image: repeating-linear-gradient(
+    -45deg,
+    rgba(255, 255, 255, 0.05) 0,
+    rgba(255, 255, 255, 0.05) 1px,
+    transparent 1px,
+    transparent 16px
+  );
+}
+
+/* Faixa de seção com leve gradiente */
+.section-soft {
+  background: linear-gradient(180deg, #f8fafc 0%, #eef3fb 100%);
+}
+
+/* ---------------------------------------------------------------------
+   Cartões de produto — hover elegante
+   --------------------------------------------------------------------- */
+.card-hover {
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+.card-hover:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px -18px rgba(11, 37, 69, 0.45);
+  border-color: rgba(23, 99, 230, 0.35);
+}
+
+/* Ícone dentro do cartão */
+.icon-badge {
+  transition: transform 0.25s ease, background-color 0.25s ease;
+}
+.card-hover:hover .icon-badge {
+  transform: scale(1.08) rotate(-3deg);
+}
+
+/* ---------------------------------------------------------------------
+   Animação de entrada ao rolar (controlada pelo main.js)
+   --------------------------------------------------------------------- */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  will-change: opacity, transform;
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+/* Atraso escalonado para grades */
+.reveal[data-delay="1"] { transition-delay: 0.08s; }
+.reveal[data-delay="2"] { transition-delay: 0.16s; }
+.reveal[data-delay="3"] { transition-delay: 0.24s; }
+.reveal[data-delay="4"] { transition-delay: 0.32s; }
+.reveal[data-delay="5"] { transition-delay: 0.40s; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .reveal { opacity: 1; transform: none; transition: none; }
+}
+
+/* ---------------------------------------------------------------------
+   Header — sombra que aparece ao rolar (classe adicionada via JS)
+   --------------------------------------------------------------------- */
+.site-header {
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, backdrop-filter 0.3s ease;
+}
+.site-header.scrolled {
+  box-shadow: 0 6px 24px -12px rgba(11, 37, 69, 0.35);
+}
+
+/* Link de navegação com sublinhado animado */
+.nav-link {
+  position: relative;
+}
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  height: 2px;
+  width: 0;
+  background: var(--brand);
+  transition: width 0.25s ease;
+}
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+/* ---------------------------------------------------------------------
+   Botão flutuante de WhatsApp
+   --------------------------------------------------------------------- */
+.whatsapp-float {
+  box-shadow: 0 12px 28px -8px rgba(37, 211, 102, 0.6);
+}
+.whatsapp-float::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 9999px;
+  background: var(--whatsapp);
+  opacity: 0.55;
+  z-index: -1;
+  animation: wa-pulse 2.2s ease-out infinite;
+}
+@keyframes wa-pulse {
+  0%   { transform: scale(1);   opacity: 0.55; }
+  70%  { transform: scale(1.6); opacity: 0; }
+  100% { transform: scale(1.6); opacity: 0; }
+}
+
+/* ---------------------------------------------------------------------
+   Faixa de parceiros — escala de cinza que ganha cor no hover
+   --------------------------------------------------------------------- */
+.partner-chip {
+  transition: transform 0.2s ease, box-shadow 0.2s ease, color 0.2s ease;
+}
+.partner-chip:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 24px -16px rgba(11, 37, 69, 0.5);
+  color: var(--brand);
+}
+
+/* Menu mobile — animação de abertura */
+.mobile-menu {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease;
+}
+.mobile-menu.open {
+  max-height: 420px;
+}

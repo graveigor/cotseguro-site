@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cotseguro — Seguros de Transporte | Mais de 20 anos de experiência</title>
+  <meta name="description" content="Com mais de 20 anos de experiência em Seguros de Transporte, a Cotseguro apresenta novas soluções para o mercado: RCTR-C, RC-DC, RCTR-VI, RCTA-C, RC Ambiental e Transporte Nacional e Internacional." />
+
+  <!-- Fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS (CDN — não precisa de build) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: "#0b2545",
+            "navy-700": "#13315c",
+            brand: "#1763e6",
+            sky: "#3b82f6",
+            amber: "#f59e0b",
+            ink: "#0f172a",
+            whatsapp: "#25d366",
+          },
+          fontFamily: {
+            sans: ["Inter", "ui-sans-serif", "system-ui", "sans-serif"],
+            display: ["Poppins", "Inter", "sans-serif"],
+          },
+        },
+      },
+    };
+  </script>
+
+  <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+
+<body class="font-sans text-ink bg-white antialiased">
+
+  <!-- ================= HEADER ================= -->
+  <header class="site-header fixed top-0 inset-x-0 z-50 bg-white/85 backdrop-blur-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="flex items-center justify-between h-[72px]">
+
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center gap-2.5 shrink-0" aria-label="Cotseguro — página inicial">
+          <svg width="38" height="38" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+            <path d="M24 3 5 11v12c0 11 8 18 19 22 11-4 19-11 19-22V11L24 3Z" fill="url(#lg)"/>
+            <path d="M16 24.5l5.5 5.5L33 18.5" stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+            <defs><linearGradient id="lg" x1="5" y1="3" x2="43" y2="45" gradientUnits="userSpaceOnUse"><stop stop-color="#1763e6"/><stop offset="1" stop-color="#0b2545"/></linearGradient></defs>
+          </svg>
+          <span class="leading-none">
+            <span class="block font-display font-extrabold text-xl text-navy tracking-tight">Cot<span class="text-brand">seguro</span></span>
+            <span class="block text-[10px] font-semibold uppercase tracking-[0.18em] text-slate-400">Seguros de Transporte</span>
+          </span>
+        </a>
+
+        <!-- Navegação desktop -->
+        <nav class="hidden lg:flex items-center gap-8 text-[15px] font-semibold text-navy">
+          <a data-nav href="index.html" class="nav-link hover:text-brand transition-colors">Home</a>
+          <a data-nav href="quem-somos.html" class="nav-link hover:text-brand transition-colors">Quem Somos</a>
+          <a data-nav href="produtos.html" class="nav-link hover:text-brand transition-colors">Produtos</a>
+          <a data-nav href="contato.html" class="nav-link hover:text-brand transition-colors">Contato</a>
+        </nav>
+
+        <!-- Ações desktop -->
+        <div class="hidden lg:flex items-center gap-3">
+          <a href="https://www.instagram.com/cottransp.seguros/" target="_blank" rel="noopener" aria-label="Instagram" class="w-10 h-10 grid place-items-center rounded-full text-navy hover:text-brand hover:bg-slate-100 transition">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.3 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.5.4 1.1.4 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.3 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.5.2-1.1.4-2.2.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.3-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.5-.4-1.1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.3-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.5-.2 1.1-.4 2.2-.4C8.4 2.2 8.8 2.2 12 2.2Zm0 1.8c-3.1 0-3.5 0-4.7.1-.9 0-1.4.2-1.7.3-.4.2-.7.4-1 .7-.3.3-.5.6-.7 1-.1.3-.3.8-.3 1.7-.1 1.2-.1 1.6-.1 4.7s0 3.5.1 4.7c0 .9.2 1.4.3 1.7.2.4.4.7.7 1 .3.3.6.5 1 .7.3.1.8.3 1.7.3 1.2.1 1.6.1 4.7.1s3.5 0 4.7-.1c.9 0 1.4-.2 1.7-.3.4-.2.7-.4 1-.7.3-.3.5-.6.7-1 .1-.3.3-.8.3-1.7.1-1.2.1-1.6.1-4.7s0-3.5-.1-4.7c0-.9-.2-1.4-.3-1.7-.2-.4-.4-.7-.7-1-.3-.3-.6-.5-1-.7-.3-.1-.8-.3-1.7-.3-1.2-.1-1.6-.1-4.7-.1Zm0 3.1a4.9 4.9 0 1 1 0 9.8 4.9 4.9 0 0 1 0-9.8Zm0 1.8a3.1 3.1 0 1 0 0 6.2 3.1 3.1 0 0 0 0-6.2Zm5.1-.3a1.15 1.15 0 1 1-2.3 0 1.15 1.15 0 0 1 2.3 0Z"/></svg>
+          </a>
+          <a href="https://wa.me/5511947828559" target="_blank" rel="noopener" class="inline-flex items-center gap-2 rounded-full bg-brand px-5 py-2.5 text-sm font-bold text-white shadow-lg shadow-brand/30 hover:bg-navy transition-colors">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M.06 24l1.68-6.13a11.86 11.86 0 0 1-1.6-5.95C.14 5.34 5.5 0 12.08 0a11.82 11.82 0 0 1 8.42 3.49 11.78 11.78 0 0 1 3.48 8.43c0 6.57-5.36 11.91-11.95 11.91a12 12 0 0 1-5.71-1.45L.06 24Zm6.6-3.8c1.7.99 3.32 1.58 5.42 1.58 5.46 0 9.9-4.43 9.9-9.87a9.82 9.82 0 0 0-2.9-7A9.82 9.82 0 0 0 12.08 2c-5.46 0-9.9 4.43-9.9 9.87 0 2.2.62 3.86 1.66 5.6l-.99 3.62 3.81-1Zm11.39-5.46c-.07-.12-.27-.2-.57-.35-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.66.15-.2.3-.76.96-.93 1.16-.17.2-.34.22-.64.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.34.45-.51.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.66-1.6-.91-2.19-.24-.57-.48-.5-.66-.5h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.01-1.04 2.47 0 1.46 1.06 2.87 1.21 3.07.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.42Z"/></svg>
+            Cotação
+          </a>
+        </div>
+
+        <!-- Botão menu mobile -->
+        <button data-menu-toggle aria-label="Abrir menu" aria-expanded="false" class="lg:hidden w-11 h-11 grid place-items-center rounded-lg text-navy hover:bg-slate-100 transition">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Menu mobile -->
+    <div data-mobile-menu class="mobile-menu lg:hidden bg-white border-t border-slate-100">
+      <nav class="px-4 py-4 flex flex-col gap-1 text-navy font-semibold">
+        <a data-nav href="index.html" class="px-3 py-2.5 rounded-lg hover:bg-slate-50">Home</a>
+        <a data-nav href="quem-somos.html" class="px-3 py-2.5 rounded-lg hover:bg-slate-50">Quem Somos</a>
+        <a data-nav href="produtos.html" class="px-3 py-2.5 rounded-lg hover:bg-slate-50">Produtos</a>
+        <a data-nav href="contato.html" class="px-3 py-2.5 rounded-lg hover:bg-slate-50">Contato</a>
+        <a href="https://wa.me/5511947828559" target="_blank" rel="noopener" class="mt-2 inline-flex items-center justify-center gap-2 rounded-full bg-brand px-5 py-3 text-white font-bold">Falar no WhatsApp</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ================= HERO ================= -->
+    <section class="hero-bg relative overflow-hidden pt-[72px] text-white">
+      <div class="hero-pattern absolute inset-0 opacity-60"></div>
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 py-20 md:py-28 grid lg:grid-cols-12 gap-12 items-center">
+        <div class="lg:col-span-7 reveal">
+          <span class="inline-flex items-center gap-2 rounded-full bg-white/10 ring-1 ring-white/25 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider">
+            <span class="w-2 h-2 rounded-full bg-amber"></span> Especialistas em Seguros de Transporte
+          </span>
+          <h1 class="mt-6 font-display font-extrabold text-4xl md:text-5xl xl:text-6xl leading-[1.05]">
+            Soluções em seguros para quem <span class="text-amber">move cargas</span> pelo Brasil e pelo mundo
+          </h1>
+          <p class="mt-6 text-lg md:text-xl text-blue-100/90 max-w-2xl">
+            Com mais de 20 anos de experiência em Seguros de Transporte, nossa motivação é
+            apresentar novas soluções para o mercado.
+          </p>
+          <div class="mt-9 flex flex-col sm:flex-row gap-4">
+            <a href="https://wa.me/5511947828559" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 rounded-full bg-amber px-7 py-4 font-bold text-navy shadow-xl shadow-amber/30 hover:brightness-105 transition">
+              Fale com um especialista
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a href="quem-somos.html" class="inline-flex items-center justify-center gap-2 rounded-full bg-white/10 ring-1 ring-white/30 px-7 py-4 font-bold text-white hover:bg-white/20 transition">
+              Conheça a Cotseguro
+            </a>
+          </div>
+
+          <!-- Selos de confiança -->
+          <div class="mt-12 grid grid-cols-3 gap-6 max-w-xl">
+            <div class="reveal" data-delay="1">
+              <p class="font-display font-extrabold text-3xl md:text-4xl text-white">+20</p>
+              <p class="text-sm text-blue-100/80">anos de experiência</p>
+            </div>
+            <div class="reveal" data-delay="2">
+              <p class="font-display font-extrabold text-3xl md:text-4xl text-white">6</p>
+              <p class="text-sm text-blue-100/80">tipos de seguro</p>
+            </div>
+            <div class="reveal" data-delay="3">
+              <p class="font-display font-extrabold text-3xl md:text-4xl text-white">100%</p>
+              <p class="text-sm text-blue-100/80">foco em transporte</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cartão flutuante -->
+        <div class="lg:col-span-5 reveal" data-delay="2">
+          <div class="relative rounded-3xl bg-white/95 text-ink p-8 shadow-2xl ring-1 ring-white/40">
+            <div class="absolute -top-4 -right-4 w-20 h-20 rounded-2xl bg-amber/90 rotate-6 grid place-items-center shadow-lg">
+              <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#0b2545" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></svg>
+            </div>
+            <h2 class="font-display font-bold text-xl text-navy">Por que a Cotseguro?</h2>
+            <ul class="mt-5 space-y-4 text-[15px]">
+              <li class="flex gap-3"><span class="mt-0.5 text-brand"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg></span><span><strong class="text-navy">Atendimento próximo</strong><br><span class="text-slate-500">Proximidade e parceria, com o melhor atendimento.</span></span></li>
+              <li class="flex gap-3"><span class="mt-0.5 text-brand"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg></span><span><strong class="text-navy">Compromisso</strong><br><span class="text-slate-500">Compromisso com o futuro da sua empresa.</span></span></li>
+              <li class="flex gap-3"><span class="mt-0.5 text-brand"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg></span><span><strong class="text-navy">Especialidade</strong><br><span class="text-slate-500">Somos especialistas no que fazemos. Com a COT, tenha mais segurança.</span></span></li>
+            </ul>
+            <a href="contato.html" class="mt-7 inline-flex w-full items-center justify-center gap-2 rounded-full bg-navy px-6 py-3.5 font-bold text-white hover:bg-brand transition">Pedir cotação gratuita</a>
+          </div>
+        </div>
+      </div>
+      <!-- onda decorativa -->
+      <svg class="relative block w-full text-white" viewBox="0 0 1440 80" fill="none" preserveAspectRatio="none" aria-hidden="true"><path d="M0 80V40c180 30 360 30 540 10S900 0 1080 10s300 30 360 40v30H0Z" fill="currentColor"/></svg>
+    </section>
+
+    <!-- ================= PRODUTOS ================= -->
+    <section class="py-20 md:py-24">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <div class="max-w-2xl reveal">
+          <span class="text-sm font-bold uppercase tracking-widest text-brand">Nossos Seguros</span>
+          <h2 class="mt-3 font-display font-extrabold text-3xl md:text-4xl text-navy">Seguros em que somos especialistas</h2>
+          <p class="mt-4 text-slate-600 text-lg">Seja para transporte rodoviário, aéreo ou marítimo, temos a solução ideal para a sua operação.</p>
+        </div>
+
+        <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- RCTR-C -->
+          <article class="card-hover reveal group rounded-2xl border border-slate-200 bg-white p-7" data-delay="1">
+            <div class="icon-badge w-14 h-14 rounded-xl bg-brand/10 text-brand grid place-items-center">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M1 3h13v13H1zM14 8h4l3 3v5h-7M5.5 19a2 2 0 1 0 0 .01M17.5 19a2 2 0 1 0 0 .01"/></svg>
+            </div>
+            <h3 class="mt-5 font-display font-bold text-lg text-navy">RCTR-C</h3>
+            <p class="mt-2 text-slate-600 text-[15px]">Responsabilidade Civil do Transportador Rodoviário de Carga. Seguro obrigatório que cobre o dano causado à mercadoria, decorrente de acidente com o veículo transportador.</p>
+            <a href="produtos.html#rctr-c" class="mt-5 inline-flex items-center gap-1.5 font-bold text-brand hover:gap-2.5 transition-all">Saiba mais <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </article>
+
+          <!-- RC-DC -->
+          <article class="card-hover reveal group rounded-2xl border border-slate-200 bg-white p-7" data-delay="2">
+            <div class="icon-badge w-14 h-14 rounded-xl bg-brand/10 text-brand grid place-items-center">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3M12 15v2"/></svg>
+            </div>
+            <h3 class="mt-5 font-display font-bold text-lg text-navy">RC-DC — Roubo de Cargas</h3>
+            <p class="mt-2 text-slate-600 text-[15px]">Responsabilidade Civil por Desvio de Carga. Seguro obrigatório que cobre roubo, desaparecimento, extravio e apropriação indébita da mercadoria transportada.</p>
+            <a href="produtos.html#rc-dc" class="mt-5 inline-flex items-center gap-1.5 font-bold text-brand hover:gap-2.5 transition-all">Saiba mais <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </article>
+
+          <!-- Transporte Nacional -->
+          <article class="card-hover reveal group rounded-2xl border border-slate-200 bg-white p-7" data-delay="3">
+            <div class="icon-badge w-14 h-14 rounded-xl bg-brand/10 text-brand grid place-items-center">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m21 16-9 5-9-5V8l9-5 9 5z"/><path d="M3.3 7 12 12l8.7-5M12 22V12"/></svg>
+            </div>
+            <h3 class="mt-5 font-display font-bold text-lg text-navy">Transporte Nacional</h3>
+            <p class="mt-2 text-slate-600 text-[15px]">Seguro destinado ao embarcador, dono da própria mercadoria, para cargas transportadas dentro do território nacional.</p>
+            <a href="produtos.html#transporte-nacional" class="mt-5 inline-flex items-center gap-1.5 font-bold text-brand hover:gap-2.5 transition-all">Saiba mais <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </article>
+
+          <!-- RCTR-VI -->
+          <article class="card-hover reveal group rounded-2xl border border-slate-200 bg-white p-7" data-delay="1">
+            <div class="icon-badge w-14 h-14 rounded-xl bg-brand/10 text-brand grid place-items-center">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20"/></svg>
+            </div>
+            <h3 class="mt-5 font-display font-bold text-lg text-navy">RCTR-VI — Viagem Internacional</h3>
+            <p class="mt-2 text-slate-600 text-[15px]">Seguro obrigatório para o transportador rodoviário de carga em viagens internacionais, que garante cobertura por danos causados aos bens ou mercadorias de terceiros.</p>
+            <a href="produtos.html#rctr-vi" class="mt-5 inline-flex items-center gap-1.5 font-bold text-brand hover:gap-2.5 transition-all">Saiba mais <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </article>
+
+          <!-- RCTA-C -->
+          <article class="card-hover reveal group rounded-2xl border border-slate-200 bg-white p-7" data-delay="2">
+            <div class="icon-badge w-14 h-14 rounded-xl bg-brand/10 text-brand grid place-items-center">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17.8 19.2 16 11l3.5-3.5a2.12 2.12 0 0 0-3-3L13 8 4.8 6.2a1 1 0 0 0-.9 1.7L9 11l-2 2-2-.5L4 14l3 1.5L8.5 19l1-1-.5-2 2-2 3.1 5.1a1 1 0 0 0 1.7-.9Z"/></svg>
+            </div>
+            <h3 class="mt-5 font-display font-bold text-lg text-navy">RCTA-C — Transportador Aéreo</h3>
+            <p class="mt-2 text-slate-600 text-[15px]">Cobertura para o transportador aéreo em caso de eventuais danos aos bens ou mercadorias de terceiros.</p>
+            <a href="produtos.html#rcta-c" class="mt-5 inline-flex items-center gap-1.5 font-bold text-brand hover:gap-2.5 transition-all">Saiba mais <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </article>
+
+          <!-- RC Ambiental -->
+          <article class="card-hover reveal group rounded-2xl border border-slate-200 bg-white p-7" data-delay="3">
+            <div class="icon-badge w-14 h-14 rounded-xl bg-brand/10 text-brand grid place-items-center">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 4 13c0-6 7-10 7-10s7 4 7 10a7 7 0 0 1-7 7Z"/><path d="M11 20c0-4 0-6 0-9"/></svg>
+            </div>
+            <h3 class="mt-5 font-display font-bold text-lg text-navy">RC Ambiental</h3>
+            <p class="mt-2 text-slate-600 text-[15px]">Garante ao transportador o reembolso de despesas com a reparação de danos ambientais causados por acidentes ocorridos com a carga transportada.</p>
+            <a href="produtos.html#ambiental" class="mt-5 inline-flex items-center gap-1.5 font-bold text-brand hover:gap-2.5 transition-all">Saiba mais <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </article>
+        </div>
+
+        <div class="mt-10 text-center reveal">
+          <a href="produtos.html" class="inline-flex items-center gap-2 rounded-full border-2 border-navy px-7 py-3.5 font-bold text-navy hover:bg-navy hover:text-white transition">Ver todos os produtos</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PARCEIROS ================= -->
+    <section class="section-soft py-16 md:py-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 text-center">
+        <span class="text-sm font-bold uppercase tracking-widest text-brand reveal block">Confiança</span>
+        <h2 class="mt-3 font-display font-extrabold text-3xl md:text-4xl text-navy reveal">Seguradoras e Parceiros</h2>
+        <p class="mt-4 text-slate-600 reveal">Trabalhamos com as maiores seguradoras do país para entregar a melhor cobertura.</p>
+
+        <div class="mt-10 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 reveal">
+          <div class="partner-chip rounded-xl bg-white ring-1 ring-slate-200 py-6 px-3 font-display font-bold text-slate-500">Porto Seguro</div>
+          <div class="partner-chip rounded-xl bg-white ring-1 ring-slate-200 py-6 px-3 font-display font-bold text-slate-500">Allianz</div>
+          <div class="partner-chip rounded-xl bg-white ring-1 ring-slate-200 py-6 px-3 font-display font-bold text-slate-500">Tokio Marine</div>
+          <div class="partner-chip rounded-xl bg-white ring-1 ring-slate-200 py-6 px-3 font-display font-bold text-slate-500">HDI Seguros</div>
+          <div class="partner-chip rounded-xl bg-white ring-1 ring-slate-200 py-6 px-3 font-display font-bold text-slate-500">Venturi</div>
+          <div class="partner-chip rounded-xl bg-white ring-1 ring-slate-200 py-6 px-3 font-display font-bold text-slate-500">+ Parceiros</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CTA ================= -->
+    <section class="relative overflow-hidden bg-navy text-white">
+      <div class="hero-pattern absolute inset-0 opacity-40"></div>
+      <div class="relative max-w-5xl mx-auto px-4 sm:px-6 py-16 md:py-20 text-center reveal">
+        <h2 class="font-display font-extrabold text-3xl md:text-4xl leading-tight">Peça uma cotação sem compromisso<br class="hidden sm:block" /> e fale <span class="text-amber">SEMPRE</span> com especialistas!</h2>
+        <p class="mt-4 text-blue-100/80 text-lg max-w-2xl mx-auto">Envie uma cópia da sua apólice e avaliamos as condições de cobertura e os valores para mostrar se suas operações estão realmente seguras, por um preço justo.</p>
+        <div class="mt-9 flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="https://wa.me/5511947828559" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 rounded-full bg-whatsapp px-8 py-4 font-bold text-white shadow-xl shadow-whatsapp/30 hover:brightness-105 transition">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M.06 24l1.68-6.13a11.86 11.86 0 0 1-1.6-5.95C.14 5.34 5.5 0 12.08 0a11.82 11.82 0 0 1 8.42 3.49 11.78 11.78 0 0 1 3.48 8.43c0 6.57-5.36 11.91-11.95 11.91a12 12 0 0 1-5.71-1.45L.06 24Zm6.6-3.8c1.7.99 3.32 1.58 5.42 1.58 5.46 0 9.9-4.43 9.9-9.87a9.82 9.82 0 0 0-2.9-7A9.82 9.82 0 0 0 12.08 2c-5.46 0-9.9 4.43-9.9 9.87 0 2.2.62 3.86 1.66 5.6l-.99 3.62 3.81-1Zm11.39-5.46c-.07-.12-.27-.2-.57-.35-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.66.15-.2.3-.76.96-.93 1.16-.17.2-.34.22-.64.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.34.45-.51.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.66-1.6-.91-2.19-.24-.57-.48-.5-.66-.5h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.01-1.04 2.47 0 1.46 1.06 2.87 1.21 3.07.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.42Z"/></svg>
+            Falar no WhatsApp
+          </a>
+          <a href="contato.html" class="inline-flex items-center justify-center gap-2 rounded-full bg-white/10 ring-1 ring-white/30 px-8 py-4 font-bold text-white hover:bg-white/20 transition">Página de contato</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= BLOG / NOTÍCIAS ================= -->
+    <section class="py-20 md:py-24">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <div class="flex flex-wrap items-end justify-between gap-4 reveal">
+          <div class="max-w-2xl">
+            <span class="text-sm font-bold uppercase tracking-widest text-brand">Conteúdo</span>
+            <h2 class="mt-3 font-display font-extrabold text-3xl md:text-4xl text-navy">Blog da COT e Notícias</h2>
+          </div>
+          <a href="produtos.html" class="font-bold text-brand inline-flex items-center gap-1.5 hover:gap-2.5 transition-all">Veja mais <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+
+        <div class="mt-10 grid md:grid-cols-3 gap-6">
+          <article class="card-hover reveal rounded-2xl overflow-hidden border border-slate-200 bg-white" data-delay="1">
+            <div class="h-40 bg-gradient-to-br from-brand to-navy"></div>
+            <div class="p-6">
+              <h3 class="font-display font-bold text-navy text-lg leading-snug">Responsabilidade Civil do Transportador Rodoviário de Cargas (RCTR-C)</h3>
+              <p class="mt-3 text-slate-600 text-[15px]">Seguro obrigatório para o transportador rodoviário de cargas, conforme Decreto-Lei n.º 73/1966. Oferece cobertura para danos causados aos bens ou mercadorias de terceiros…</p>
+              <a href="produtos.html#rctr-c" class="mt-4 inline-flex items-center gap-1.5 font-bold text-brand hover:gap-2.5 transition-all">Ler mais <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            </div>
+          </article>
+
+          <article class="card-hover reveal rounded-2xl overflow-hidden border border-slate-200 bg-white" data-delay="2">
+            <div class="h-40 bg-gradient-to-br from-amber to-navy"></div>
+            <div class="p-6">
+              <h3 class="font-display font-bold text-navy text-lg leading-snug">Responsabilidade Civil por Desaparecimento de Cargas (RC-DC)</h3>
+              <p class="mt-3 text-slate-600 text-[15px]">Também obrigatório para o transportador rodoviário de cargas, indeniza perdas em eventos de roubo ou desaparecimento da carga, extravio e apropriação indébita…</p>
+              <a href="produtos.html#rc-dc" class="mt-4 inline-flex items-center gap-1.5 font-bold text-brand hover:gap-2.5 transition-all">Ler mais <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            </div>
+          </article>
+
+          <article class="card-hover reveal rounded-2xl overflow-hidden border border-slate-200 bg-white" data-delay="3">
+            <div class="h-40 bg-gradient-to-br from-sky to-navy"></div>
+            <div class="p-6">
+              <h3 class="font-display font-bold text-navy text-lg leading-snug">Transporte Nacional</h3>
+              <p class="mt-3 text-slate-600 text-[15px]">O Seguro de Transporte Nacional é a modalidade contratada pelo embarcador, dono da carga. Cobre perdas e danos das mercadorias transportadas em território nacional…</p>
+              <a href="produtos.html#transporte-nacional" class="mt-4 inline-flex items-center gap-1.5 font-bold text-brand hover:gap-2.5 transition-all">Ler mais <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="bg-navy text-blue-100/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-16 grid gap-10 md:grid-cols-4">
+      <div class="md:col-span-1">
+        <div class="flex items-center gap-2.5">
+          <svg width="34" height="34" viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M24 3 5 11v12c0 11 8 18 19 22 11-4 19-11 19-22V11L24 3Z" fill="#1763e6"/><path d="M16 24.5l5.5 5.5L33 18.5" stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span class="font-display font-extrabold text-xl text-white">Cot<span class="text-sky">seguro</span></span>
+        </div>
+        <p class="mt-4 text-sm leading-relaxed">Mais de 20 anos de experiência em Seguros de Transporte. Nossa motivação é apresentar novas soluções para o mercado.</p>
+        <div class="mt-5 flex items-center gap-3">
+          <a href="https://wa.me/5511947828559" target="_blank" rel="noopener" aria-label="WhatsApp" class="w-10 h-10 grid place-items-center rounded-full bg-white/10 hover:bg-whatsapp text-white transition"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.06 24l1.68-6.13a11.86 11.86 0 0 1-1.6-5.95C.14 5.34 5.5 0 12.08 0a11.82 11.82 0 0 1 8.42 3.49 11.78 11.78 0 0 1 3.48 8.43c0 6.57-5.36 11.91-11.95 11.91a12 12 0 0 1-5.71-1.45L.06 24Zm6.6-3.8c1.7.99 3.32 1.58 5.42 1.58 5.46 0 9.9-4.43 9.9-9.87a9.82 9.82 0 0 0-2.9-7A9.82 9.82 0 0 0 12.08 2c-5.46 0-9.9 4.43-9.9 9.87 0 2.2.62 3.86 1.66 5.6l-.99 3.62 3.81-1Zm11.39-5.46c-.07-.12-.27-.2-.57-.35-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.66.15-.2.3-.76.96-.93 1.16-.17.2-.34.22-.64.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.34.45-.51.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.66-1.6-.91-2.19-.24-.57-.48-.5-.66-.5h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.01-1.04 2.47 0 1.46 1.06 2.87 1.21 3.07.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.42Z"/></svg></a>
+          <a href="https://www.instagram.com/cottransp.seguros/" target="_blank" rel="noopener" aria-label="Instagram" class="w-10 h-10 grid place-items-center rounded-full bg-white/10 hover:bg-brand text-white transition"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.3 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.5.4 1.1.4 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.3 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.5.2-1.1.4-2.2.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.3-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.5-.4-1.1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.3-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.5-.2 1.1-.4 2.2-.4C8.4 2.2 8.8 2.2 12 2.2Zm0 3.6a6.2 6.2 0 1 0 0 12.4 6.2 6.2 0 0 0 0-12.4Zm0 1.9a4.3 4.3 0 1 1 0 8.6 4.3 4.3 0 0 1 0-8.6Zm5.1-.3a1.15 1.15 0 1 1-2.3 0 1.15 1.15 0 0 1 2.3 0Z"/></svg></a>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="font-display font-bold text-white">Navegação</h3>
+        <ul class="mt-4 space-y-2.5 text-sm">
+          <li><a href="index.html" class="hover:text-white transition">Home</a></li>
+          <li><a href="quem-somos.html" class="hover:text-white transition">Quem Somos</a></li>
+          <li><a href="produtos.html" class="hover:text-white transition">Produtos</a></li>
+          <li><a href="contato.html" class="hover:text-white transition">Contato</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="font-display font-bold text-white">Produtos</h3>
+        <ul class="mt-4 space-y-2.5 text-sm">
+          <li><a href="produtos.html#rctr-c" class="hover:text-white transition">RCTR-C</a></li>
+          <li><a href="produtos.html#rc-dc" class="hover:text-white transition">RC-DC — Roubo de Cargas</a></li>
+          <li><a href="produtos.html#rctr-vi" class="hover:text-white transition">RCTR-VI — Internacional</a></li>
+          <li><a href="produtos.html#rcta-c" class="hover:text-white transition">RCTA-C — Aéreo</a></li>
+          <li><a href="produtos.html#ambiental" class="hover:text-white transition">RC Ambiental</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="font-display font-bold text-white">Contato</h3>
+        <!-- TODO: trocar pelos dados reais da Cotseguro quando disponíveis -->
+        <ul class="mt-4 space-y-3 text-sm">
+          <li class="flex gap-2.5"><span class="text-sky mt-0.5"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg></span><span>Rua Serra de Botucatu, 1195 — 10º Andar, Sala 108 — Tatuapé, São Paulo/SP — CEP 03317-001</span></li>
+          <li class="flex gap-2.5"><span class="text-sky mt-0.5"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg></span><a href="tel:+5511947828559" class="hover:text-white transition">(11) 94782-8559</a></li>
+          <li class="flex gap-2.5"><span class="text-sky mt-0.5 opacity-0"><svg width="18" height="18" viewBox="0 0 24 24"></svg></span><a href="tel:+5511983714043" class="hover:text-white transition">(11) 98371-4043</a></li>
+          <li class="flex gap-2.5"><span class="text-sky mt-0.5"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg></span><a href="mailto:contato@cottransp.com.br" class="hover:text-white transition break-all">contato@cottransp.com.br</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-white/10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 py-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-sm">
+        <p>© <span data-year>2026</span> Cotseguro. Todos os direitos reservados.</p>
+        <p class="text-blue-100/50">Seguros de Transporte • Rodoviário • Aéreo • Marítimo</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botão flutuante WhatsApp -->
+  <a href="https://wa.me/5511947828559" target="_blank" rel="noopener" aria-label="Falar no WhatsApp" class="whatsapp-float fixed bottom-5 right-5 z-50 w-14 h-14 grid place-items-center rounded-full bg-whatsapp text-white">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M.06 24l1.68-6.13a11.86 11.86 0 0 1-1.6-5.95C.14 5.34 5.5 0 12.08 0a11.82 11.82 0 0 1 8.42 3.49 11.78 11.78 0 0 1 3.48 8.43c0 6.57-5.36 11.91-11.95 11.91a12 12 0 0 1-5.71-1.45L.06 24Zm6.6-3.8c1.7.99 3.32 1.58 5.42 1.58 5.46 0 9.9-4.43 9.9-9.87a9.82 9.82 0 0 0-2.9-7A9.82 9.82 0 0 0 12.08 2c-5.46 0-9.9 4.43-9.9 9.87 0 2.2.62 3.86 1.66 5.6l-.99 3.62 3.81-1Zm11.39-5.46c-.07-.12-.27-.2-.57-.35-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.66.15-.2.3-.76.96-.93 1.16-.17.2-.34.22-.64.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.34.45-.51.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.66-1.6-.91-2.19-.24-.57-.48-.5-.66-.5h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.01-1.04 2.47 0 1.46 1.06 2.87 1.21 3.07.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.42Z"/></svg>
+  </a>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

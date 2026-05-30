@@ -49,11 +49,16 @@
   <!-- ================= HEADER ================= -->
   <header class="site-header fixed top-0 inset-x-0 z-50 bg-white/85 backdrop-blur-md">
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
-      <div class="flex items-center justify-between h-[120px]">
+      <div class="flex items-center justify-between h-[120px] relative">
+
+        <!-- Botão menu mobile (esquerda) -->
+        <button data-menu-toggle aria-label="Abrir menu" aria-expanded="false" class="lg:hidden w-11 h-11 grid place-items-center rounded-lg text-navy hover:bg-slate-100 transition shrink-0">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
 
         <!-- Logo -->
         <a href="index.html" class="flex items-center shrink-0" aria-label="Cot·Transp — página inicial">
-          <img src="assets/img/logo-cottransp.svg" alt="Cot·Transp Seguro de Transportes" class="h-24 md:h-28 w-auto ml-20">
+          <img src="assets/img/logo-cottransp.svg" alt="Cot·Transp Seguro de Transportes" class="h-16 lg:h-24 lg:h-28 w-auto lg:ml-20">
         </a>
 
         <!-- Navegação desktop -->
@@ -75,15 +80,12 @@
           </a>
         </div>
 
-        <!-- Botão menu mobile -->
-        <button data-menu-toggle aria-label="Abrir menu" aria-expanded="false" class="lg:hidden w-11 h-11 grid place-items-center rounded-lg text-navy hover:bg-slate-100 transition">
-          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
-        </button>
+
       </div>
     </div>
 
     <!-- Menu mobile -->
-    <div data-mobile-menu class="mobile-menu lg:hidden bg-white border-t border-slate-100">
+    <div data-mobile-menu class="mobile-menu lg:hidden">
       <nav class="px-4 py-4 flex flex-col gap-1 text-navy font-semibold">
         <a data-nav href="index.html" class="px-3 py-2.5 rounded-lg hover:bg-slate-50">Home</a>
         <a data-nav href="quem-somos.html" class="px-3 py-2.5 rounded-lg hover:bg-slate-50">Quem Somos</a>

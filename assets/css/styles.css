@@ -257,3 +257,14 @@ html.dark input::placeholder,
 html.dark textarea::placeholder {
   color: #64748b !important;
 }
+
+/* Select com "Selecione..." (option desabilitado) aparece cinza
+   como um placeholder, voltando ao normal quando uma opção é escolhida */
+select:invalid,
+select:has(option[value=""]:checked) {
+  color: #94a3b8;
+}
+html.dark select:invalid,
+html.dark select:has(option[value=""]:checked) {
+  color: #94a3b8 !important;
+}

@@ -17,7 +17,7 @@
 /* Rolagem suave ao clicar em âncoras internas */
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 240px; /* compensa o header fixo no mobile */
+  scroll-padding-top: 170px; /* compensa o header fixo no mobile */
 }
 @media (min-width: 1024px) {
   html { scroll-padding-top: 140px; }

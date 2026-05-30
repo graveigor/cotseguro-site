@@ -113,7 +113,16 @@
       { threshold: 0.12, rootMargin: "0px 0px -40px 0px" }
     );
 
-    els.forEach(function (el) { observer.observe(el); });
+    els.forEach(function (el) {
+      // Se o elemento já está visível no viewport ao carregar,
+      // exibe imediatamente sem esperar rolagem
+      var rect = el.getBoundingClientRect();
+      if (rect.top < window.innerHeight && rect.bottom > 0) {
+        el.classList.add("is-visible");
+      } else {
+        observer.observe(el);
+      }
+    });
   }
 
   /* ----- Ano atual no rodapé ----- */

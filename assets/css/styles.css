@@ -168,3 +168,46 @@ body {
 .mobile-menu.open {
   max-height: 420px;
 }
+
+/* =====================================================================
+   MODO ESCURO (ativado pela classe .dark no <html>, via botão de tema)
+   Sobrescreve as superfícies/textos claros do Tailwind para tons escuros.
+   ===================================================================== */
+html.dark body {
+  background-color: #0a1322;
+  color: #e6edf7;
+}
+
+/* Superfícies */
+html.dark .bg-white          { background-color: #101d33 !important; }
+html.dark .bg-white\/95      { background-color: rgba(16, 29, 51, 0.96) !important; }
+html.dark .bg-slate-50       { background-color: #0e1a2e !important; }
+html.dark .bg-slate-100      { background-color: #1a2942 !important; }
+html.dark .hover\:bg-slate-50:hover  { background-color: #16243c !important; }
+html.dark .hover\:bg-slate-100:hover { background-color: #1a2942 !important; }
+html.dark .section-soft {
+  background: linear-gradient(180deg, #0b1626 0%, #0a1322 100%);
+}
+
+/* Cabeçalho fixo translúcido */
+html.dark .site-header { background-color: rgba(10, 19, 34, 0.85) !important; }
+
+/* Textos */
+html.dark .text-navy     { color: #e6edf7 !important; }
+html.dark .text-ink      { color: #e6edf7 !important; }
+html.dark .text-slate-600 { color: #a7b6cc !important; }
+html.dark .text-slate-500 { color: #9aa9c0 !important; }
+html.dark .text-slate-400 { color: #7e8ea6 !important; }
+
+/* Bordas e anéis */
+html.dark .border-slate-200 { border-color: #26344d !important; }
+html.dark .border-slate-100 { border-color: #1d2b44 !important; }
+html.dark .ring-slate-200   { --tw-ring-color: #26344d !important; }
+html.dark .ring-white\/40   { --tw-ring-color: rgba(255, 255, 255, 0.10) !important; }
+
+/* Botões/superfícies em navy ficam um tom acima do fundo p/ contraste */
+html.dark .bg-navy              { background-color: #16264a !important; }
+html.dark .hover\:bg-navy:hover { background-color: #1c3157 !important; }
+
+/* Cartões de logos dos parceiros permanecem claros p/ os logotipos aparecerem */
+html.dark .partner-card { background-color: #ffffff !important; }

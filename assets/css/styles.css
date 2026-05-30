@@ -234,15 +234,24 @@ html.dark .hover\:bg-navy:hover { background-color: #1c3157 !important; }
 html.dark .partner-card { background-color: #ffffff !important; }
 
 /* Inputs, textareas e selects no modo escuro:
-   fundo branco mantido, texto e placeholder escurecidos p/ legibilidade */
+   fundo branco mantido, texto e placeholder escurecidos p/ legibilidade.
+   Especificidade reforçada (.bg-white) para vencer a regra geral de
+   superfície escura aplicada pelo dark mode. */
 html.dark input[type="text"],
 html.dark input[type="email"],
 html.dark input[type="tel"],
 html.dark textarea,
-html.dark select {
+html.dark select,
+html.dark select.bg-white,
+html.dark input.bg-white,
+html.dark textarea.bg-white {
   background-color: #ffffff !important;
   color: #0b2545 !important;
   border-color: #cbd5e1 !important;
+}
+html.dark select option {
+  background-color: #ffffff !important;
+  color: #0b2545 !important;
 }
 html.dark input::placeholder,
 html.dark textarea::placeholder {

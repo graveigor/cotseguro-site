@@ -232,3 +232,19 @@ html.dark .hover\:bg-navy:hover { background-color: #1c3157 !important; }
 
 /* Cartões de logos dos parceiros permanecem claros p/ os logotipos aparecerem */
 html.dark .partner-card { background-color: #ffffff !important; }
+
+/* Inputs, textareas e selects do formulário no modo escuro */
+html.dark input[type="text"],
+html.dark input[type="email"],
+html.dark input[type="tel"],
+html.dark textarea,
+html.dark select {
+  background-color: #0e1a2e !important;
+  color: #e6edf7 !important;
+  border-color: #26344d !important;
+}
+html.dark input::placeholder,
+html.dark textarea::placeholder {
+  color: #7e8ea6 !important;
+}
+html.dark .border-slate-300 { border-color: #26344d !important; }

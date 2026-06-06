@@ -82,22 +82,19 @@
 
   <main>
     <!-- ================= PAGE HERO ================= -->
-    <section class="hero-bg relative overflow-hidden pt-[150px] lg:pt-[120px] text-white">
-      <div class="hero-pattern absolute inset-0 opacity-60"></div>
-      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 py-16 md:py-20 grid lg:grid-cols-2 gap-10 items-center">
-        <div>
-          <nav class="text-sm text-blue-100/70 reveal" aria-label="Trilha de navegação">
-            <a href="index.html" class="hover:text-white">Home</a> <span class="mx-1.5">/</span> <span class="text-white">Produtos</span>
-          </nav>
-          <h1 class="mt-4 font-display font-extrabold text-4xl md:text-5xl reveal">Produtos</h1>
-          <p class="mt-4 max-w-2xl text-lg text-blue-100/90 reveal">Seja para transporte rodoviário, aéreo ou marítimo, temos a solução ideal. Confira os seguros em que somos especialistas.</p>
-        </div>
-        <div class="reveal hidden lg:block">
-          <div class="relative rounded-2xl overflow-hidden ring-1 ring-white/15 shadow-2xl shadow-black/40">
-            <img src="assets/img/caminhao-azul.jpg" alt="Caminhão azul em estrada — Cotseguro" loading="lazy" class="w-full h-full object-cover aspect-[4/3]">
-            <div class="absolute inset-0 bg-gradient-to-tr from-navy/55 via-navy/10 to-transparent" aria-hidden="true"></div>
-          </div>
-        </div>
+    <section class="produtos-hero relative overflow-hidden pt-[150px] lg:pt-[120px] text-white">
+      <!-- Imagem de fundo (estrada de outono) -->
+      <div class="absolute inset-0">
+        <img src="assets/img/estrada-outono.jpg" alt="" aria-hidden="true" class="w-full h-full object-cover">
+        <!-- Overlay escuro para legibilidade do texto -->
+        <div class="absolute inset-0 bg-gradient-to-r from-navy/85 via-navy/65 to-navy/40"></div>
+      </div>
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 py-20 md:py-28">
+        <nav class="text-sm text-blue-100/80 reveal" aria-label="Trilha de navegação">
+          <a href="index.html" class="hover:text-white">Home</a> <span class="mx-1.5">/</span> <span class="text-white">Produtos</span>
+        </nav>
+        <h1 class="mt-4 font-display font-extrabold text-4xl md:text-5xl reveal drop-shadow-lg">Produtos</h1>
+        <p class="mt-4 max-w-2xl text-lg text-blue-100/95 reveal drop-shadow">Seja para transporte rodoviário, aéreo ou marítimo, temos a solução ideal. Confira os seguros em que somos especialistas.</p>
       </div>
       <svg class="relative block w-full text-white" viewBox="0 0 1440 80" fill="none" preserveAspectRatio="none" aria-hidden="true"><path d="M0 80V40c180 30 360 30 540 10S900 0 1080 10s300 30 360 40v30H0Z" fill="currentColor"/></svg>
     </section>

@@ -15,7 +15,6 @@
   var WHATSAPP_NUMBER = "5511912161668";
 
   document.addEventListener("DOMContentLoaded", function () {
-    initTheme();
     initMobileMenu();
     initHeaderScroll();
     initScrollReveal();
@@ -23,37 +22,6 @@
     initContactForm();
     initActiveNav();
   });
-
-  /* ----- Tema claro/escuro (persiste no localStorage) ----- */
-  function initTheme() {
-    var root = document.documentElement;
-
-    function apply(theme) {
-      var dark = theme === "dark";
-      root.classList.toggle("dark", dark);
-      document.querySelectorAll("[data-icon-sun]").forEach(function (el) {
-        el.classList.toggle("hidden", !dark);
-      });
-      document.querySelectorAll("[data-icon-moon]").forEach(function (el) {
-        el.classList.toggle("hidden", dark);
-      });
-      document.querySelectorAll("[data-theme-label]").forEach(function (el) {
-        el.textContent = dark ? "Modo claro" : "Modo escuro";
-      });
-    }
-
-    var saved = "light";
-    try { if (localStorage.getItem("theme") === "dark") saved = "dark"; } catch (e) {}
-    apply(saved);
-
-    document.querySelectorAll("[data-theme-toggle]").forEach(function (btn) {
-      btn.addEventListener("click", function () {
-        var dark = !root.classList.contains("dark");
-        try { localStorage.setItem("theme", dark ? "dark" : "light"); } catch (e) {}
-        apply(dark ? "dark" : "light");
-      });
-    });
-  }
 
   /* ----- Menu mobile (abre/fecha) ----- */
   function initMobileMenu() {

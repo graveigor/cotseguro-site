@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 220" width="480" height="220">
+  <style>
+    .akad { font-family: 'Poppins', 'Inter', 'Arial Black', sans-serif; font-weight: 900; font-size: 130px; fill: #E72374; letter-spacing: -4px; }
+    .seguros { font-family: 'Poppins', 'Inter', Arial, sans-serif; font-weight: 500; font-size: 38px; fill: #E72374; letter-spacing: 6px; }
+  </style>
+  <text x="240" y="135" text-anchor="middle" class="akad">akad</text>
+  <text x="240" y="190" text-anchor="middle" class="seguros">SEGUROS</text>
+</svg>

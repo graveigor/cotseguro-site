@@ -12,7 +12,7 @@
 
   // Número de WhatsApp usado no formulário (apenas dígitos, com DDI 55).
   // >>> Para trocar, altere também os links wa.me/... no HTML.
-  var WHATSAPP_NUMBER = "5511947828559";
+  var WHATSAPP_NUMBER = "5511912161668";
 
   document.addEventListener("DOMContentLoaded", function () {
     initTheme();
